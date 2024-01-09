@@ -450,8 +450,8 @@ You can listen and react to scroll with the `useScroll` hook which gives you use
   <Scroll>
     {/* Canvas contents in here will scroll along */}
     <Foo position={[0, 0, 0]} />
-    <Foo position={[0, viewport.height, 0]} />
-    <Foo position={[0, viewport.height * 1, 0]} />
+    <Foo position={[0, -viewport.height, 0]} />
+    <Foo position={[0, -viewport.height * 2, 0]} />
   </Scroll>
   <Scroll html>
     {/* DOM contents in here will scroll along */}
